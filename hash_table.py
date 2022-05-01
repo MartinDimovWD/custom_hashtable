@@ -15,4 +15,3 @@ class HashTable:
 
 table = HashTable()
 print(table.array)
-table['name'] = 'Peter'
