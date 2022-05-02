@@ -60,7 +60,7 @@ class HashTable:
         keys_values = [f"{self.__keys[index]}: {self.__values[index]}"
                        for index in range(len(self.__keys))
                        if self.__keys[index] is not None]
-        return "{" + ", ".join(keys_values) + "}"
+        return "{ " + ", ".join(keys_values) + " }"
 
     def get(self, key, default=None):
         try:
@@ -73,10 +73,10 @@ class HashTable:
         return self.max_capacity
 
 
-table = HashTable()
-table['name'] = 'Peter'
-table['age'] = 25
-table["is_pet_owner"] = True
-
-print(table)
-print(table.get('name'))
+# table = HashTable()
+# table['name'] = 'Peter'
+# table['age'] = 25
+# table["is_pet_owner"] = True
+#
+# print(table)
+# print(table.get('name'))
